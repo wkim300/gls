@@ -1,0 +1,97 @@
+/* 공통속성 */
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-width: 1060px;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-family: "Song Myung", "Roboto", Avenir, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+.header {
+  background: yellowgreen;
+  height: 72px;
+  padding: 15px 15px 5px 15px;
+}
+.container {
+  max-width: 1800px;
+  margin: 0, auto;
+  padding: 0, 20px;
+  position: relative;
+}
+.container-float {
+  max-width: 1800px;
+  background: red;
+  margin: 0, auto;
+  padding: 0, 20px;
+  position: relative;
+}
+container-float::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.logo {
+  margin: 0;
+  padding-left: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  text-align: right;
+}
+.list {
+  margin: 0;
+  font-size: 0;
+}
+
+.list-item {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+}
+.list-item > a {
+  color: white;
+  display: block;
+  padding: 20px;
+}
+.list-item > a:hover {
+  color: #c9f0dd;
+}
+
+/* MAIN */
+.hero-section {
+  background: skyblue;
+}
+
+.main-content {
+  float: left;
+  width: 70%;
+  background: pink;
+}
+
+.side-content {
+  float: right;
+  width: 30%;
+  background: yellow;
+}
+/* FOOTER */
+.footer {
+  background: yellowgreen;
+  clear: both;
+}
